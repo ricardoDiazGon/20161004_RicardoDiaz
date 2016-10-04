@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    font-family: Arial, sans-serif;
+}
+
+body, html{
+    background: rgba(200,200,150,5);
+    height: 100%;
+}
+
+#cabecera, #contenedor, #pie{
+    width: 1200px;
+    margin: 0px auto;
+    background: rgb(230,230,230);
+    overflow: hidden;
+}
+
+#cabecera{
+    margin-top: 50px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    background: rgba(200,200,200,255);
+    color: rgb(50,50,50);
+    text-shadow: 3px 3px 5px rgb(50,50,50);
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+#cabecera h1{
+    margin: 20px 0px;
+}
+
+#contenedor h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#contenedor section {
+    display: inline-block;
+    float: left;
+    width: 320px;
+    margin: 40px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(245,245,245, 50);
+    box-shadow: 10px 10px 5px #505050;
+}
+
+section h2{
+    text-align: center;
+    color: rgb(230,230,230);
+    background: rgba(100,150,150,50);
+    margin: 20px 0px;
+}
+
+section article li{
+    margin: 10px 0px 0px 30px;
+    list-style: decimal;
+    overflow: visible;
+}
+
+section article ol{
+    margin-bottom: 20px;
+}
+
+section article li a:hover{
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+
+section article ol li a{
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    overflow: visible;
+}
+
+#pie{
+    background: rgba(100,120,150,50);
+    color: rgb(230,230,230);
+}
+
+#pie p{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.parametros, .parametros th, .parametros td{
+    background: white;
+    padding: 5px;
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+.parametros th{
+    background: rgb(50,50,50);
+    color: rgb(240,240,240);
+}
+
+.parametros{
+   margin: 50px auto;
+   box-shadow: 10px 10px 5px #505050;
+}
+
+.parametros caption{
+    background: rgb(245,245,245);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #505050;
+}
+
+.enlace {
+    display: block;
+    text-align: center;
+    background: rgba(100,100,250,200);
+    color: rgb(200,200,200);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace:hover{
+    background: rgba(100,250,100,200);
+    text-align: center;
+    color: rgb(0,0,255);
+}
+
+#formulario{
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background: rgb(230,230,255);
+}
+#formulario fieldset{
+    padding: 10px;
+}
+
+#formulario p{
+    margin: 10px;
+}
+
+#formulario li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+#formulario li label{
+    margin-right: 5px;
+}
+
+#formulario p{
+    text-align: center;
+}

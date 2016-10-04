@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario simple</title>
+        <meta lang="es" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/estilo.css" />
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>Formulario Completo</h1>
+            <form id="formulario" action="../fcompleto" method="post" >
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <ul>
+                        <li><label>Usuario</label><input type="text" name="usuario"/></li>
+                        <li><label>Password</label><input type="password" name="pass"/></li>
+                        <li>
+                            <label>Edad</label>
+                            <select name="edad" size="1">
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27" selected>27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <ul>
+                        <li>
+                            <label>Estado civil: </label>
+                            <input type="radio" name="ecivil" value="soltero" checked>Soltero/a &nbsp;
+                            <input type="radio" name="ecivil" value="casado">Casado/a &nbsp;
+                            <input type="radio" name="ecivil" value="viudo">Viudo/a &nbsp;
+                            <input type="radio" name="ecivil" value="divorciado">Divorciado/a
+                        </li>
+                        <li>
+                            <label>Aficiones: (Uno o varios, CNTRL)</label></br>
+                            <select multiple name="aficiones" size="6">
+                                <option value="leer">Leer</option>
+                                <option value="futbol">Futbol</option>
+                                <option value="toros">Toros</option>
+                                <option value="programar">Programar</option>
+                                <option value="cine">Cine</option>
+                                <option value="salir">Salir</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Comentarios:</label></br>
+                            <textarea name="comentario" maxlength="200" cols="50" rows="4" placeholder="Pon tu comentario..."  ></textarea>
+                        </li>        
+                    </ul>    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Medios tecnológicos</legend>
+                    <ul>
+                        <li>
+                            <label>Dispones de internet?: 
+                            <input type="radio" name="internet" value="si" checked>Si &nbsp;
+                            <input type="radio" name="internet" value="no">No </label>           
+                        </li>
+                        <li>
+                            <label>Sistema Operativo (Elige uno)</label></br>
+                            <select name="so" size="4">
+                                <option value="Windows">Windows</option>
+                                <option value="Macintosh">Macintosh</option>
+                                <option value="Linux">Linux</option>
+                                <option value="Solaris">Solaris</option>
+                            </select>                            
+                        </li>
+                    </ul>
+                    <input type="hidden" name="oculto" value="23" />
+                </fieldset>
+                   
+                <p><input type="submit" name="enviar" value="enviado">       
+                    <input type="reset" name="limpiar" value="limpiar"></p>
+                
+            </form>
+            <p><a class='enlace' href='../index.html'> -> Volver al inicio <- </a></p>
+        </div>
+    </body>
+</html>
