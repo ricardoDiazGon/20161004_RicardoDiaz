@@ -47,6 +47,15 @@ body, html{
     box-shadow: 10px 10px 5px #505050;
 }
 
+#contenedor li{
+    margin: 10px 50px;
+    list-style: none;
+}
+
+#contenedor li b{
+    text-transform: uppercase;
+}
+
 section h2{
     text-align: center;
     color: rgb(230,230,230);
@@ -150,5 +159,24 @@ section article ol li a{
 }
 
 #formulario p{
+    text-align: center;
+}
+
+/* Marca de que un campo es obligatorio */
+#contenedor span.obligatorio{
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+
+/* Marca de cuando falta un campo o está mal */
+#contenedor span.marcado{
+    color: rgb(255,0,0);
+    font-weight: bold;
+    text-align: right;
+}
+
+#formulario  h2{
+    color: rgb(255,0,0);
+    font-weight: bold;
     text-align: center;
 }
