@@ -1,1 +1,1 @@
-Actualizado a REGISTRO -Actividad obligatoria para el Jueves 6-10-2016 -
+Actividades REGISTRO (última),  FCORRECTO( del martes pasado) y todos los ejercicios anteriores hechos y actualizados.  10/10/2016 00:40 am

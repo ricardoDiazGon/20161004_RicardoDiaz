@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <title>Formulario</title>
-        <meta lang='es' charset="UTF-8">
+        <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../estilos/estilo.css"/>
     </head>
@@ -27,7 +27,7 @@ and open the template in the editor.
                       <li>
                          <label>Fecha nacimiento</label>
                          <select name="dia" size="1" >
-                             <option value="1" selected>1</option>
+                             <option value="1">1</option>
                              <option value="2">2</option>
                              <option value="3">3</option>
                              <option value="4">4</option>
@@ -58,9 +58,9 @@ and open the template in the editor.
                              <option value="29">29</option>
                              <option value="30">30</option>
                              <option value="31">31</option>
-                         </select>&nbsp/
+                         </select>&nbsp;/
                          <select name="mes" size="1" >
-                             <option value="1" selected>1</option>
+                             <option value="1">1</option>
                              <option value="2">2</option>
                              <option value="3">3</option>
                              <option value="4">4</option>
@@ -79,7 +79,7 @@ and open the template in the editor.
                              <option value="1985">1985</option>
                              <option value="1986">1986</option>
                              <option value="1987">1987</option>
-                             <option value="1988" selected>1988</option>
+                             <option value="1988">1988</option>
                              <option value="1989">1989</option>
                              <option value="1990">1990</option>
                              <option value="1991">1991</option>
@@ -105,11 +105,12 @@ and open the template in the editor.
                 </fieldset>
                 <fieldset>
                     <legend>Informaci&oacute;n general</legend>
+                    <label>Preferencias</label>
                     <ul>
-                        <li><label>Preferencias</label><input type="checkbox" name="aficiones" value="deporte"/> Deporte
-                         <input type="checkbox" name="aficiones" value="lectura"/> Lectura
-                        <input type="checkbox" name="aficiones" value="cine"/> Cine
-                        <input type="checkbox" name="aficiones" value="viaje"/> Viaje</li>
+                        <li><input type="checkbox" name="aficiones" value="deporte"/> Deporte</li>
+                         <li><input type="checkbox" name="aficiones" value="lectura"/> Lectura</li>
+                        <li><input type="checkbox" name="aficiones" value="cine"/> Cine</li>
+                        <li><input type="checkbox" name="aficiones" value="viaje"/> Viaje</li>
                     </ul>
                 </fieldset>
                 

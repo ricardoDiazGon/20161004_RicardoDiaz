@@ -51,6 +51,7 @@ public class fcompleto extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
+        StringBuilder afi = new StringBuilder();
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -62,33 +63,29 @@ public class fcompleto extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<div id='contenedor'>");
-            out.println("<h1>Formulario simple</h1>");
+            out.println("<h1>Formulario completo</h1>");
             out.println("<div id='formulario'>");
-            
-            out.println("<h2>Datos personales</h2>");
-                   
-            out.println("<ol><li><b>Usuario:</b> " +request.getParameter("usuario") +"</li>"); 
-            out.println("<li><b>Password:</b> " +request.getParameter("pass") +"</li>");           
-            out.println("<li><b>Edad:</b> " +request.getParameter("edad") +"</li></ol>");
-            
-            out.println("<h2>Datos personales</h2>");
-            out.println("<ol><li><b>Estado civil:</b> " +request.getParameter("ecivil") +"</li>");
-            out.println("<li><b>Aficiones:</b> ");
+            out.println("<h2>Datos del usario introducido </h2>");
             String[] aficiones = request.getParameterValues("aficiones");
             for(int i = 0; i < aficiones.length; i++){
-                out.println(aficiones[i]);
+                afi.append(aficiones[i]);
                 if(i < aficiones.length -1){
-                out.println(", ");
+                afi.append(", ");
                 }
             }
-            out.println("</li>");
-            out.println("<li><b>Comentario:</b> " +request.getParameter("comentario") +"</li></ol>");
 
-            out.println("<h2>Medios tecnológicos</h2>");
-            out.println("<ol><li><b>Dispones de internet?: </b>" +request.getParameter("internet") +"</li>");
-            out.println("<li><b>Sistema operativo: </b>" +request.getParameter("so") +"</li>");
-            out.println("<li><b>Campo oculto: </b>" +request.getParameter("oculto") +"</li></ol>");
-            out.println("</div>");
+            Enumeration<String> cabeceras = request.getParameterNames();
+            String cabecera = "";
+            out.println("<ul>");
+            while(cabeceras.hasMoreElements()){
+                cabecera = cabeceras.nextElement();
+                if(!cabecera.startsWith("env") && !cabecera.startsWith("afi")){
+                    out.println("<li><b>" +cabecera +": </b>" +request.getParameter(cabecera) +"</li>");
+                }
+            }
+            
+            out.println("<li><b>Aficiones: </b>" +afi +"</li>");
+            out.println("</ul></div>");
             
             out.println("<p><a class='enlace' href='html/fcompleto.html'> -> Volver al formulario <- </a></p>");
             out.println("</div>");
