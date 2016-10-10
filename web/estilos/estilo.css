@@ -47,7 +47,7 @@ body, html{
     box-shadow: 10px 10px 5px #505050;
 }
 
-#contenedor li{
+#contenedor ul li{
     margin: 10px 50px;
     list-style: none;
 }
@@ -63,7 +63,7 @@ section h2{
     margin: 20px 0px;
 }
 
-section article li{
+section article ol li{
     margin: 10px 0px 0px 30px;
     list-style: decimal;
     overflow: visible;
