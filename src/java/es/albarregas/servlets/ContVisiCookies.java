@@ -36,7 +36,9 @@ public class ContVisiCookies extends HttpServlet {
                     break;
                 }
             }
-        }else{
+        }
+        
+        if(cookie == null){
             cookie = new Cookie("contador", "0");
         }
         
