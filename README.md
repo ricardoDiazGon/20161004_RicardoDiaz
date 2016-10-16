@@ -1,1 +1,1 @@
-Actualizado a Contador con Cookies y Contador con Sesiones. Versión 1.1, con pequeña corrección del contador de cookies. (Repasaré si es o no mejorable). 12/10/2016 22:40
+Actualizado a Contador con Cookies y Contador con Sesiones. Versión 1.2, añadido footer y mejorado en general. 16/10/2016 12:55
