@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial;
     font-family: Arial, sans-serif;
 }
 
@@ -54,6 +53,15 @@ body, html{
 
 #contenedor li b{
     text-transform: uppercase;
+}
+
+#contenedor figure.imagenEntrada{
+    text-align: center;
+    margin: 50px auto;
+}
+
+figure.imagenEntrada img{
+    box-shadow: 10px 10px #AAAAAA;
 }
 
 section h2{
@@ -135,11 +143,12 @@ section article ol li a{
     color: rgb(0,0,255);
 }
 
-#formulario{
+#formulario, #formCarrito{
     margin: 20px auto;
     width: 50%;
     padding: 20px;
     background: rgb(230,230,255);
+    box-shadow: 10px 10px #AAAAAA;
 }
 #formulario fieldset{
     padding: 10px;
@@ -158,14 +167,40 @@ section article ol li a{
     margin-right: 5px;
 }
 
-#formulario p{
+#formulario p, #formCarrito p{
+    margin: 30px 0px;
     text-align: center;
 }
 
+#formCarrito ul li{
+    text-align: center;
+}
+
+#formCarrito h3{
+    text-align: center;
+    font: bold italic 1em Verdana,Arial,sans-serif;
+}
+
+
+
 /* Marca de que un campo es obligatorio */
-#contenedor span.obligatorio{
+#contenedor span.obligatorio, h2.error{
     font-weight: bold;
-    color: rgb(255,0,0);
+    color: rgb(125,0,0);
+}
+
+h2.correcto{
+    font-weight: bold;
+    color: rgb(0,125,0);    
+}
+
+h3.agradecimiento{
+    text-align: center;
+    text-decoration: underline;
+    font: italic bold 1em Comic-sans,Verdana,sans-serif;  
+    color: gray;
+    text-shadow: 2px 2px silver;
+    margin: 30px 0px;
 }
 
 /* Marca de cuando falta un campo o está mal */
@@ -175,8 +210,14 @@ section article ol li a{
     text-align: right;
 }
 
+
 #formulario  h2{
     color: rgb(255,0,0);
     font-weight: bold;
     text-align: center;
+}
+
+.libro{
+    height: 100px;
+    width: 150px;
 }
